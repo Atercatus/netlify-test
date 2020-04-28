@@ -7,7 +7,7 @@ publish_mode: editorial_workflow
 collections:
   - label: "Blog"
     name: "blog"
-    folder: "_posts/blog"
+    folder: "content/blog"
     create: true
     identifier_field: name
     fields:
