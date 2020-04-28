@@ -24,7 +24,7 @@ const Post = ({ blogpost }) => {
   );
 };
 
-Post.getInitialProps = async ({ query }) => {
+Post.getStaticProps = async ({ query }) => {
   const { slug } = query;
   const blogpost = await import(`../../../content/blog/${slug}.md`).catch(
     () => null

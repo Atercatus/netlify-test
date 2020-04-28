@@ -40,7 +40,7 @@ const Blog = ({ postsList }) => (
   </Layout>
 );
 
-Blog.getInitialProps = async () => {
+Blog.getStaticProps = async () => {
   const postsList = await importBlogPosts();
 
   return { postsList };
